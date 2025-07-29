@@ -11,7 +11,6 @@ import java.util.List;
 @AllArgsConstructor
 public class Sale {
     private String id;
-    private String userId;
     private LocalDateTime date;
     private List<SaleItem> items;
 
