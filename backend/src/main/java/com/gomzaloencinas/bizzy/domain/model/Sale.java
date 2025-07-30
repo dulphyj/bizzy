@@ -12,14 +12,14 @@ import java.util.List;
 public class Sale {
     private String id;
     private LocalDateTime date;
-    private List<SaleItem> items;
+    private List<SaleItem> saleItems;
 
     public Sale(){
-        items = new ArrayList<>();
+        saleItems = new ArrayList<>();
     }
 
     public double getTotalPrice() {
-        return items.stream()
+        return saleItems.stream()
                 .mapToDouble(SaleItem::getTotalPrice)
                 .sum();
     }
